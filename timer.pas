@@ -1,9 +1,4 @@
 ﻿##
-var n := readinteger('Введите год:');
+var (x, y, z) := readinteger3('Введите количество часов, минут, секунд:');
+print($'Количество секунд: {x * 3600 + y * 60 + z}')
 
-if (n mod 4 = 0) then
-  if n mod 100 = 0 then
-    if n mod 400 = 0 then print('В этом году 366 дней')
-    else print('В этом году 365 дней')
-  else print('В этом году 366 дней')
-else print('в этом году 365 дней')
